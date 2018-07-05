@@ -1,0 +1,118 @@
+body 
+{
+	background-image : url("../../resources/img/houdain.png");
+	color:white;
+}
+
+.container_vide
+{
+	min-height: 180px;
+}
+
+.container_videpro
+{
+	min-height: 120px
+}
+
+.slogan
+{
+	font-weight: bold;
+	font-size : 5rem;
+}
+
+h2
+{
+	font-weight: bold;
+	font-size : 35px;
+	text-align : center;
+}
+
+.logo
+{
+
+	height: 90px;
+}
+
+.inscription
+{
+	background-color: black;
+	border: 1px rgb(100,100,100) solid;
+	padding : 5px;
+	border-radius:5px;
+}
+
+.soustitre
+{
+	text-align: center;
+	color: grey;
+	font-size : 17px;
+}
+
+.formulaire
+{
+	color: grey;
+}
+
+.formulaire p {
+	text-align: center;
+}
+
+.champ
+{
+	background-color: black;
+	color: grey;
+	border: 1px grey solid;
+	font-size: 15px;
+	padding-left:10px;
+}
+
+.btn
+{
+	color: black;
+	font-weight: bold;
+	background: rgb(225,0,16);
+
+}
+
+.erreur
+{
+	color: red;
+	text-align: center;
+}
+
+.reussi
+{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+.lieninscri
+{
+	color: grey;
+	text-decoration : underline;
+}
+
+.deco
+{
+	right:0px;
+	top:0px;
+}
+
+.profil
+{
+	background-color: black;
+	border: 2px rgb(225,0,16) solid;
+	padding-left: 50px;
+	padding-bottom: 5rem;
+}
+
+label {
+	color: white;
+}
+
+
+
+
+
+ 

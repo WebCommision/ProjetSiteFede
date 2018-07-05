@@ -1,0 +1,68 @@
+.backgroundOverlay{
+	background: rgba(0,0,0,0.8);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+    z-index: 100;
+}
+
+.popup{
+    padding: 3rem;
+	border: solid 0.05rem grey;
+	height: 35rem;
+	width: 70rem;
+    background-color: black;
+ 	margin: 0 auto;
+ 	margin-top: 10rem;
+    z-index:500;
+}
+
+.warningpopup{
+    padding: 3rem;
+    border: solid 0.05rem grey;
+    height: 28rem;
+    width: 56rem;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 10rem;
+    z-index:500;
+}
+
+.connexionformulaire p {
+    text-align: center;
+}
+
+
+.connexionh2
+{
+    font-weight: bold;
+    font-size : 35px;
+    text-align : center;
+}
+
+.connexionp
+{
+    text-align: center;
+    color: grey;
+    font-size : 17px;
+}
+
+.connexionchamp
+{
+    background-color: black;
+    color: grey;
+    border: 1px grey solid;
+    font-size: 15px;
+    padding-left:10px;
+}
+
+.btn
+{
+    color: black;
+    font-weight: bold;
+    background: rgb(225,0,16);
+
+}
