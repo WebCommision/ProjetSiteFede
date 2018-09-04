@@ -4,7 +4,7 @@
 	<div class="hidden-xs">
 
 	    <div class="col-sm-12">
-        	<p class="event" > Evenement à venir, nom cercle, photo... </p>
+        	<p class="event center" > Wait for it...</p>
 	    </div>
 	           
 	</div>

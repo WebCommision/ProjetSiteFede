@@ -116,20 +116,14 @@
               <a href="accueil.php" class="nav-link"><i class="glyphicon glyphicon-home"></i>&nbsp;Accueil</a>
             </li>
             <li class="nav-item">
-              <a href="boutique.php" class="nav-link"><i class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Boutique</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="calendrier.php#"><i class="glyphicon glyphicon-calendar"></i>&nbsp;Calendrier</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="cercles.php"><i class="glyphicon glyphicon-leaf"></i>&nbsp;Cercles</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="chants.php"><i class="glyphicon glyphicon-music"></i>&nbsp;Chants</a>
             </li>
-            <li class="nav-item">
+            <!--li class="nav-item">
               <a class="nav-link" href="livreOr.php"><i class="glyphicon glyphicon-book"></i>&nbsp;Livre d'or</a>   
-            </li>
+            </li-->
             <li class="nav-item">
               <a class="nav-link" href="sites.php"><i class="glyphicon glyphicon-education"></i>&nbsp;Sites utiles</a>
             </li>

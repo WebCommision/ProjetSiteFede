@@ -18,6 +18,7 @@ session_start();
 
     <?php include("./event.php"); ?>
 
+	<!-- Side bar-->
     <div class="container">
 
     	<div class= "col-sm-2 hidden-xs sidebar" >
