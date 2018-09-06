@@ -77,9 +77,12 @@ include("../controller/getConnexionData.php");
                 <div class = 'col-lg-6'>
 
                 	<?php
-
-					echo "<img src='../resources/photos/utilisateur/".$userinfo['photo_utilisateur']."' >";
-
+                    /*try{
+					    echo "<img src='../resources/photos/utilisateur/".$userinfo['photo_utilisateur']."' >";
+                    }catch(Exception $e)
+                    {*/
+                        echo " <p> pas de photo pour le moment, tkt ça arrivera bien un jour </p> ";
+                    //}
                 	?>
 
                 	<h5 style="color: white">Carrière : <br></h5>

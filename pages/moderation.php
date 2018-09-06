@@ -49,7 +49,7 @@ session_start();
                         </p>
                         <p>
                             <label>Photo de comité : </label> 
-                            <input type="file" id="path_photo_comite" name="path_photo_comite" required>
+                            <input type="file" id="path_photo_comite" name="path_photo_comite">
 
                             <br>
                             <span> * champ facultatif </span>
@@ -80,7 +80,7 @@ session_start();
                             $path_photo_comite = $_FILES['path_photo_comite']['name'];
                      
                             
-                            if(!empty($_POST['nom_cercle']) AND !empty($_POST['promotion_comite']) AND !empty($path_photo_comite))
+                            if(!empty($_POST['nom_cercle']) AND !empty($_POST['promotion_comite']) /*AND !empty($path_photo_comite)*/)
                             {   
                  
                                 //On vérifie si le cercle existe : 
@@ -100,8 +100,8 @@ session_start();
                                     {
                                         
                                         //Pour rentrer les données dans la BDD et les afficher
-                                        $req = $bdd -> prepare('INSERT INTO comite(nom_cercle, promotion_comite, theme_comite, path_photo_comite) VALUES(?,?,?,?)');
-                                        $req->execute(array($nom_cercle,$promotion_comite,$theme_comite,$path_photo_comite));
+                                        $req = $bdd -> prepare('INSERT INTO comite(nom_cercle, promotion_comite, theme_comite) VALUES(?,?,?)');
+                                    $req->execute(array($nom_cercle,$promotion_comite,$theme_comite));
 
                                         echo "Comite créé avec succès";
                                         
