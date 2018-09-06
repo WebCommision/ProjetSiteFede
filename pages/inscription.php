@@ -2,7 +2,6 @@
 <?php
 session_start();
 ?>
-
 <?php include("../model/dao/connexionDAO.php"); ?>
 <?php include("../controller/getConnexionData.php"); ?>
 
@@ -23,10 +22,10 @@ session_start();
 		<div class = row >
 			<div class = "col-md-7">
 
-				<div class="col-md-10 hidden-xs" style="padding-top: 6rem;">
+				<div class="col-md-10 hidden-xs" style="padding-top: 3.5rem;">
 
 					<img class="logo" src='../resources/img/logoSiteFede.png' alt='Logo du site !'/>
-					<h1 class="slogan">Le site fédé a bien plus que vous ne pensez à vous <br /> offrir !</h1>
+					<h1 class="slogan">Le site fédé a bien plus que vous ne pensez à vous <!--br /--> offrir !</h1>
 
 				</div>
 			</div>	
@@ -48,8 +47,8 @@ session_start();
 						</p>
 						<p>
 							<label>Sexe : </label>
-							<input type="radio" id='sexe_utilisateur' name='sexe_utilisateur' value='1' id='homme' required /><label for='1'> Homme </label>
-							<input type="radio" id='sexe_utilisateur' name='sexe_utilisateur' value='0' id='femme' required /><label for='0'> Femme </label>
+							<input type="radio" name='sexe_utilisateur' value='1' id='homme' required /><label for='1'> Homme </label>
+							<input type="radio" name='sexe_utilisateur' value='0' id='femme' required /><label for='0'> Femme </label>
 						</p>
 						<p>
 							<ul style="list-style-type: none; text-align: center;">
@@ -87,8 +86,8 @@ session_start();
 						</p>
 						<p>
 							<label>S'abonner à la newsletter ? </label>
-							<input type="radio" id='spam_utilisateur' name='spam_utilisateur' value='1' id='oui' required /><label for='1'> Oui </label>
-							<input type="radio" id='spam_utilisateur' name='spam_utilisateur' value='0' id='non' required /><label for='0'> Non </label>
+							<input type="radio"  name='spam_utilisateur' value='1' id='oui' required /><label for='1'> Oui </label>
+							<input type="radio"  name='spam_utilisateur' value='0' id='non' required /><label for='0'> Non </label>
 							<br> 
 							<span style="font-size: 1rem"> * champ facultatif</span>
 						</p>
@@ -105,6 +104,8 @@ session_start();
 					//Vérification des données 
 					if(isset($_POST['forminscription']))
 					{
+						
+
 						//htmlspecialchars : pour que l'utilisateur n'entre pas de la merde
 						$prenom = htmlspecialchars($_POST['prenom_utilisateur']);
 						$nom = htmlspecialchars($_POST['nom_utilisateur']);
@@ -116,18 +117,30 @@ session_start();
 						$mdp = sha1($_POST['password_utilisateur']);
 						$mdp2 = sha1($_POST['password']);
 						$spam = $_POST['spam_utilisateur'];
-						move_uploaded_file($_FILES['photo_utilisateur']['tmp_name'],"../resources/photos/utilisateur/".$_FILES['photo_utilisateur']['name']);
-						$photo=$_FILES['photo_utilisateur']['name'];
+						//move_uploaded_file($_FILES['photo_utilisateur']['tmp_name'],"../resources/photos/utilisateur/".$_FILES['photo_utilisateur']['name']);
+						//$photo=$_FILES['photo_utilisateur']['name'];	
 						
-						if(!empty($_POST['sexe_utilisateur']) AND !empty($_POST['prenom_utilisateur']) AND !empty($_POST['nom_utilisateur']) AND !empty($_POST['date_naissance_utilisateur']) AND !empty($_POST['email_utilisateur']) AND !empty($_POST['email']) AND !empty($_POST['pseudo_utilisateur']) AND !empty($_POST['password_utilisateur']) AND !empty($_POST['password']) AND !empty($_POST['spam_utilisateur']))
+						//echo "<script> alert('".$prenom.','.$nom.','.$sexe.','.$date.','.$mail.','.$mail2.','.$pseudo.','.$spam.','.$mdp.','.$mdp2."')</script> ";
+						
+
+
+						if(isset($prenom) AND isset($nom) AND isset($sexe) 
+							AND isset($date) AND isset($mail) AND isset($mail2) 
+							AND isset($pseudo) AND isset($mdp) 
+							AND isset($mdp2) AND isset($spam))
 						{	
+
 							// Si les champs rentrés sont ok, les afficher
 							//if(isset($prenom) AND )
 							//Vérification adresse mail 
+							//echo "<script> alert('not empty')</script> ";
+							
 							if($mail == $mail2)
 							{
+								//echo "<script>alert('ok with mail') </script>";
 								if(filter_var($mail,FILTER_VALIDATE_EMAIL))
 								{
+									//echo "<script>alert('ok with filter var') </script>";
 									//On vérifie si le mail existe déjà : 
 									$reqmail = $bdd -> prepare('SELECT * FROM utilisateur WHERE email_utilisateur = ?');
 									$reqmail -> execute(array($mail));
@@ -135,28 +148,33 @@ session_start();
 									$mailexist = $reqmail->rowCount();
 									if($mailexist == 0)
 									{
+										//echo "<script>alert('ok with test mail') </script>";
 										//On fait le même avec le pseudo
 										$reqpseudo = $bdd -> prepare('SELECT * FROM utilisateur WHERE pseudo_utilisateur=?');
 										$reqpseudo -> execute(array($pseudo));
 										$pseudoexist = $reqpseudo -> rowCount();
 										if($pseudoexist == 0)
 										{
+											// "<script>alert('ok with test pseudo') </script>";
 											if($mdp == $mdp2)
 											{
+												//echo "<script>alert('ok with mdp == ') </script>";
 												//Pour rentrer les données dans la BDD et les afficher
-												$req = $bdd -> prepare('INSERT INTO utilisateur(prenom_utilisateur, nom_utilisateur, sexe_utilisateur, date_naissance_utilisateur, email_utilisateur, pseudo_utilisateur, password_utilisateur, spam_utilisateur) VALUES(?,?,?,?,?,?,?,?)');
-												$req->execute(array($prenom,$nom,$sexe,$date,$mail,$pseudo,$mdp,$spam));
+												$req = $bdd -> prepare('INSERT INTO utilisateur(prenom_utilisateur, nom_utilisateur, date_naissance_utilisateur, email_utilisateur, pseudo_utilisateur, password_utilisateur, spam_utilisateur) VALUES(?,?,?,?,?,?,?)');
+												$req->execute(array($prenom,$nom,$date,$mail,$pseudo,$mdp,$spam));
+												echo "<script>alert('ok with query, normally ...') </script>";
 												//On crée une variable de session 
-												//$_SESSION['comptecree'] = '<p class="reussi">Votre compte a bien été créé !</p>'; 
-												
+												//$_SESSION['comptecree'] = 
+												 echo '<p class="reussi">Votre compte a bien été créé !</p>';
 												// header('Location: accueil.php');
 
-												if (!empty($photo))
-												{
+												
+												//{
 
-													  $req=$bdd -> prepare("UPDATE utilisateur SET photo_utilisateur = ? WHERE pseudo_utilisateur = ? ");
-													  $req->execute(array($photo,$pseudo));
-												}
+													  //$req=$bdd -> prepare("UPDATE utilisateur SET photo_utilisateur = ? WHERE pseudo_utilisateur = ? ");
+													  //$req->execute(array($photo,$pseudo));
+													  
+												//}
 											}
 											else
 											{
