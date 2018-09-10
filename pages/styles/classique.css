@@ -1,0 +1,195 @@
+	html body{
+color:white;
+background-color: black;
+height: 100%;
+}
+
+p{text-align:justify;}
+
+
+
+.center{
+	text-align: center;
+}
+
+.champ{
+color: black;
+}
+
+.margintop{
+	margin-top: 3rem;
+	} /* marge top de l article d un chant*/
+
+.marginbottom{
+	margin-bottom: 3rem;
+}
+
+.container{
+	padding:0rem;
+}
+
+.bord{ /* border*/
+	border: solid 0.1rem grey;
+	border-radius:5px;
+}
+
+.padding3{ /* border*/
+	padding: 3rem;
+}
+
+
+a{	
+	color:white !important;
+	text-decoration: none !important;
+}
+
+a:visited{
+	color: white;
+}
+
+a:hover{
+	color:red;
+}
+
+a.gras:hover{
+	color:white !important;
+	font-weight: bold;
+}
+
+.networkBar{
+	height:2.5rem; 
+	background-color: black;
+}
+
+.networkBarElement{
+	float: left;
+	display: block;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-size: 1.3rem;
+}
+
+.networkBarElement:hover{
+	background-color: #242424;
+}
+
+.networkBarAnchor:hover{
+	color: white;
+}
+/* reset le padding de bootstrap pour le positionnement du logo*/
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar{
+	background-color: #1B1B1B !important;
+	margin:0rem;
+	border-radius:0px;
+	border:none;
+	border-top:solid 0.3px #242424;
+}
+
+.form-control {
+	margin-top: 0.3rem;
+	background-color: #363636;
+	border:none !important;
+	height: 3rem;
+	
+}
+
+.menu{
+	border-top:solid 0.3px #242424;
+}
+
+.nav-tabs{
+	border-bottom:none;
+}
+
+p.event{
+	font-size: 6rem;
+}
+
+.event{
+padding:0rem;
+margin-bottom: 2rem;
+background-color: #555555;
+border-radius: 5px;
+}
+
+.sidebar{
+padding: 0rem;
+padding-top: 1rem;
+padding-bottom: 2rem;
+background-color: #1B1B1B;
+border-radius: 5px;
+}
+
+.sidebarElement{
+	width: fill;
+}
+.sidebarElement:hover{
+	background-color: #242424;
+}
+.sidebarAnchor:hover{
+	color: white;
+}
+
+
+
+.btnsearch, .btnsearch:hover, .btnsearch:focus{
+	height:3rem;
+	margin-top: 0.3rem;
+	width: 7rem; 
+	border:none;
+	background-color: red;
+}
+
+@media (max-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+
+}
+
+@media (min-width: 780px ) {
+  /* CSS that should be displayed if width is equal to or more than 800px goes here  */
+
+	.form-control{
+		width: 25vw !important;
+		margin-left: 5vw;
+	}
+}
+
+@media (min-width: 1200px) {
+  /* CSS that should be displayed if width is equal to or more than 800px goes here  */
+
+	.form-control{
+		width: 35vw !important;
+	}
+}
+
+h5{
+text-align: left;
+color:red;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+h4{
+text-align: left;
+color:red;
+font-size: 1.3rem;
+font-weight: bold;
+}
+
+.footer{
+	margin-top: 3rem;
+	padding: 3rem;
+	border-radius:5px;
+	background-color: #222222;
+}
+
+.btndiv{
+	padding:0rem;
+	margin:0rem;
+}
+
+
