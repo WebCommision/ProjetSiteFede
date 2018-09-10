@@ -127,7 +127,9 @@
             <li class="nav-item">
               <a class="nav-link" href="sites.php"><i class="glyphicon glyphicon-education"></i>&nbsp;Sites utiles</a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="sites.php"><i class="glyphicon glyphicon-education"></i>&nbsp;Bleusaille</a>
+            </li>
             <?php 
 
             if(isset($_SESSION['id_utilisateur']))
