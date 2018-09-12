@@ -191,5 +191,24 @@ font-weight: bold;
 	padding:0rem;
 	margin:0rem;
 }
+/* relatif à la page bleusaille.php*/
+.containerArticle{
+	display:flex;
+	flex-direction: row;/*
+	justify-content: space-around;*/
+}
+.divArticle p{
+}
 
+.divArticle{
+	text-align:justify;
+
+}
+.imgArticle{
+/*	display:block;*/
+	width:50%;	
+	height:50%;
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
 

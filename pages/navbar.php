@@ -66,7 +66,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="./accueil.php" class="navbar-brand"><img src="../resources/img/LogoSiteFede.png" width="140" height="" class="d-inline-block align-top" alt=""></a>
+            <a href="./accueil.php" class="navbar-brand">
+                <img src="../resources/img/LogoSiteFede.png"   class="d-inline-block align-top" alt="Logo site fédé">
+            </a>
         </div>
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -128,7 +130,7 @@
               <a class="nav-link" href="sites.php"><i class="glyphicon glyphicon-education"></i>&nbsp;Sites utiles</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sites.php"><i class="glyphicon glyphicon-education"></i>&nbsp;Bleusaille</a>
+              <a class="nav-link" href="bleusaille.php"><i class="glyphicon glyphicon-education"></i>&nbsp;Bleusaille</a>
             </li>
             <?php 
 

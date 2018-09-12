@@ -34,7 +34,7 @@ session_start();
 
 				<div class="col-md-2 col-sm-3 col-xs-4">
 					<h5>
-				   		<a href="./cercle.php?id=<?php echo $cercle['id_cercle'] ?>"><img src="<?php echo $cercle['logo_cercle'] ?> "></a> <br />
+				   		<a href="./cercle.php?id=<?php echo $cercle['id_cercle'] ?>"><img src="<?php echo $cercle['logo_cercle'] ?>.jpg"></a> <br />
 				   		<div style="margin-top: 0.5rem;"> <?php echo $cercle['nom_cercle']; ?> </div>
 				   </h5>
 				</div>
