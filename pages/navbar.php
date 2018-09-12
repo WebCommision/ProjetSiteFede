@@ -67,7 +67,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="./accueil.php" class="navbar-brand">
-                <img src="../resources/img/LogoSiteFede.png"   class="d-inline-block align-top" alt="Logo site fédé">
+                <img src="../resources/img/logoSiteFede.png"   class="d-inline-block align-top" alt="logo site fédé" width="140" height=""/>
             </a>
         </div>
         <!-- Collection of nav links, forms, and other content for toggling -->
