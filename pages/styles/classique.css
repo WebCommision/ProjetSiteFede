@@ -34,7 +34,8 @@ color: black;
 }
 
 .padding3{ /* border*/
-	padding: 3rem;
+	padding-left: 3rem;
+	padding-right=3rem;
 }
 
 
@@ -192,23 +193,53 @@ font-weight: bold;
 	margin:0rem;
 }
 /* relatif à la page bleusaille.php*/
-.containerArticle{
-	display:flex;
-	flex-direction: row;/*
-	justify-content: space-around;*/
+
+
+.mv5{
+	padding-bottom: 5%;
+	padding-top: 5%;
 }
-.divArticle p{
+.pr2{
+	
+	padding-right: 2%;
+}
+.ml{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.floatedRight{
+	float:right;
+}
+.floatedLeft{
+	float:left;
 }
 
-.divArticle{
-	text-align:justify;
+.mauto{
+	margin-top:3%;
+	padding-left:3%;
+	padding-right:3%;
+}
+p{
+	font-size: 120%
+}
 
+.divImg{
+	width:80%;
+	/*padding:auto;*/
 }
-.imgArticle{
-/*	display:block;*/
-	width:50%;	
-	height:50%;
-	/*margin-left: auto;
-	margin-right: auto;*/
+.imgArticle1{
+width:93%;
+padding-left:7%;
 }
+.imgArticle2{
+	width:83%;
+	
+}
+h1{
+	font-size: 250%;
+}
+.center{
+	margin:auto;
+}
+
 
