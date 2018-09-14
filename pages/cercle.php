@@ -104,7 +104,7 @@ session_start();
 			   			<br> 
 
 			   		<div align="center">
-			   			<img class= "center" src="<?php echo $cercle['logo_cercle'] ?> ">
+			   			<!--<img class= "center" src="<?php echo $cercle['logo_cercle'] ?> "> -->
 			   		</div>
 
 			  		</p>
