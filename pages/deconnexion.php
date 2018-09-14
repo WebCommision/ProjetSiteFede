@@ -4,5 +4,5 @@ session_start();
 $_SESSION = array();
 session_destroy();
 //J'ai mis connexion.php en attendant mais faudrait mettre menu.php
-header('Location: accueil.php');
+header('Location: index.php');
 ?>

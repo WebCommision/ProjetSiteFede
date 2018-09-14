@@ -3,7 +3,7 @@
 
 	<div class="col-sm-4 col-xs-12">
 	    <ul class="center list-unstyled">
-			<li><a href="accueil.php">Accueil</a></li>
+			<li><a href="index.php">Accueil</a></li>
   			<li><a href="livreOr.php">Livre d'or</a></li>
   		</ul>
   	</div>
