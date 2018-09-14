@@ -241,5 +241,28 @@ h1{
 .center{
 	margin:auto;
 }
+.comiteList{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.comiteMembre p{
+	display: block;
+}
+a{
+	color:tomato;
+}
+.flex{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+.img100{
+	width:100%;
+}
+.onFlex h2{
+	display: inline;
+
+}
 
 
