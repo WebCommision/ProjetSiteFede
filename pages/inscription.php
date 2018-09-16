@@ -166,7 +166,7 @@ session_start();
 												//On crée une variable de session 
 												//$_SESSION['comptecree'] = 
 												 echo '<p class="reussi">Votre compte a bien été créé !</p>';
-												// header('Location: index.php');
+												// header('Location: accueil.php');
 
 												
 												//{

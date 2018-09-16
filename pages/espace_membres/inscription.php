@@ -128,7 +128,7 @@
 												<a href="connexion.php">Me connecter</a>
 												<?php
 												//On redirige sur l'accueil
-												// header('Location: index.php'); /!\ il faudra changer avec la bonne page ! Ca redirige un utilisateur sur une autre page. 
+												// header('Location: accueil.php'); /!\ il faudra changer avec la bonne page ! Ca redirige un utilisateur sur une autre page. 
 											}
 											else
 											{

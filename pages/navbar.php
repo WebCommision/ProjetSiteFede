@@ -66,7 +66,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="./index.php" class="navbar-brand">
+            <a href="./accueil.php" class="navbar-brand">
                 <img src="../resources/img/logoSiteFede.png"   class="d-inline-block align-top" alt="logo site fédé" width="140" height=""/>
             </a>
         </div>
@@ -115,7 +115,7 @@
         <div class="col-sm-12">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a href="index.php" class="nav-link"><i class="glyphicon glyphicon-home"></i>&nbsp;Accueil</a>
+              <a href="accueil.php" class="nav-link"><i class="glyphicon glyphicon-home"></i>&nbsp;Accueil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cercles.php"><i class="glyphicon glyphicon-leaf"></i>&nbsp;Cercles</a>
