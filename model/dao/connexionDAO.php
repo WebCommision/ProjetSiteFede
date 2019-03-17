@@ -1,7 +1,15 @@
 <?php
-	
+	/** 
+	 * files used for declaring the connexion function, but 
+	 * which also create $bdd. it can be used in every files if
+	 * we include the connexionDAO.php
+	 * **/
 
 	function connexion() {
+		/**
+		* function charged to connect to the database using 
+		*a PHP Data Object(PDO): https://secure.php.net/manual/en/book.pdo.php
+		**/
 
 		try {
 
@@ -15,7 +23,7 @@
 		{
 	    	die('Erreur : ' . $e->getMessage());
 		}
-	}		// Sous WAMP (Windows)
+	}		
 
 	$bdd=connexion();
 ?>

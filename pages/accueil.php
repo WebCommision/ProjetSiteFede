@@ -1,5 +1,6 @@
 <?php
 session_start();
+// create the $_SESSION object
 ?>
 
 <?php include("../model/dao/connexionDAO.php"); ?>
